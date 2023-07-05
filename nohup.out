@@ -1,0 +1,38 @@
+ * Serving Flask app "SIGNUP-LOGIN" (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: off
+Traceback (most recent call last):
+  File "SIGNUP-LOGIN.py", line 91, in <module>
+    app.run(host='0.0.0.0', port=9500, ssl_context='adhoc')
+  File "/home/devasc/.local/lib/python3.8/site-packages/flask/app.py", line 990, in run
+    run_simple(host, port, self, **options)
+  File "/home/devasc/.local/lib/python3.8/site-packages/werkzeug/serving.py", line 1052, in run_simple
+    inner()
+  File "/home/devasc/.local/lib/python3.8/site-packages/werkzeug/serving.py", line 996, in inner
+    srv = make_server(
+  File "/home/devasc/.local/lib/python3.8/site-packages/werkzeug/serving.py", line 847, in make_server
+    return ThreadedWSGIServer(
+  File "/home/devasc/.local/lib/python3.8/site-packages/werkzeug/serving.py", line 740, in __init__
+    HTTPServer.__init__(self, server_address, handler)
+  File "/usr/lib/python3.8/socketserver.py", line 452, in __init__
+    self.server_bind()
+  File "/usr/lib/python3.8/http/server.py", line 138, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib/python3.8/socketserver.py", line 466, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+ * Serving Flask app "SIGNUP-LOGIN" (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: off
+ * Running on https://0.0.0.0:9500/ (Press CTRL+C to quit)
+127.0.0.1 - - [05/Jul/2023 16:02:37] "[37mGET / HTTP/1.1[0m" 200 -
+127.0.0.1 - - [05/Jul/2023 16:02:44] "[37mGET / HTTP/1.1[0m" 200 -
+127.0.0.1 - - [05/Jul/2023 16:07:17] "[37mPOST /signup/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [05/Jul/2023 16:07:37] "[37mPOST /signup/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [05/Jul/2023 16:07:54] "[37mPOST /signup/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [05/Jul/2023 16:08:14] "[37mPOST /signup/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [05/Jul/2023 16:09:57] "[37mPOST /login/v2 HTTP/1.1[0m" 200 -
